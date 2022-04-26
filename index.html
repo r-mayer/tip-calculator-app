@@ -20,29 +20,38 @@
   <div class="app">
     <div class="container">
       <div class="left-side">
-        <label for="billValue" class="text-label">Bill</label>
-        <input type="number" name="billValue" id="billValue" placeholder="0">
-        <p class="selectTip">Select Tip %</p>
-        <div class="select-tip-container">
-          <div class="tip-btn">
-            <input type="radio" name="tips" id="tip5">
-          </div>
-          <div class="tip-btn">
-            <input type="radio" name="tips" id="tip10">
-          </div>
-          <div class="tip-btn">
-            <input type="radio" name="tips" id="tip15">
-          </div>
-          <div class="tip-btn">
-            <input type="radio" name="tips" id="tip25">
-          </div>
-          <div class="tip-btn">
-            <input type="radio" name="tips" id="tip50">
-          </div>
-            <input type="text" name="tipCustom" id="tipCustom" placeholder="Custom">
+        <div class="bill">
+          <label for="billValue" class="text-label">Bill</label>
+          <!-- <img src="./images/icon-dollar.svg" alt=""> -->
+          <input type="number" name="billValue" id="billValue" placeholder="0">
         </div>
-        <label for="numPeople" class="text-label">Number of people</label>
-        <input type="number" name="numPeople" id="numPeople" placeholder="0">
+        
+        <div class="tip">
+          <p class="selectTip">Select Tip %</p>
+          <div class="select-tip-container">
+            <div class="tip-btn">
+              <input type="radio" name="tips" id="tip5">
+            </div>
+            <div class="tip-btn">
+              <input type="radio" name="tips" id="tip10">
+            </div>
+            <div class="tip-btn">
+              <input type="radio" name="tips" id="tip15">
+            </div>
+            <div class="tip-btn">
+              <input type="radio" name="tips" id="tip25">
+            </div>
+            <div class="tip-btn">
+              <input type="radio" name="tips" id="tip50">
+            </div>
+              <input type="text" name="tipCustom" id="tipCustom" placeholder="Custom">
+          </div>
+        </div>
+        
+        <div class="people">
+          <label for="numPeople" class="text-label">Number of people</label>
+          <input type="number" name="numPeople" id="numPeople" placeholder="0">
+        </div>        
       </div>
       <div class="right-side">
         <div class="display-container">
@@ -51,17 +60,17 @@
               <p class="title">Tip Amount</p>
               <p class="desc">/ person</p>
             </div>
-            <p class="result">4.27</p>
+            <p class="result">$0.00</p>
           </div>
           <div class="display-total-result">
             <div class="text">
               <p class="title">Total</p>
               <p class="desc">/ person</p>
             </div>
-            <p class="result">32.79</p>
+            <p class="result">$0.00</p>
           </div>
-          <button class="reset-btn">Reset</button>
         </div>
+        <button class="reset-btn">Reset</button>
       </div>
     </div>
   </div>
