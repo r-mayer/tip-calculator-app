@@ -23,28 +23,28 @@
         <div class="bill">
           <label for="billValue" class="text-label">Bill</label>
           <!-- <img src="./images/icon-dollar.svg" alt=""> -->
-          <input type="number" name="billValue" id="billValue" placeholder="0">
+          <input type="number" name="billValue" id="billValue" placeholder="0" step="0.01">
         </div>
         
         <div class="tip">
           <p class="selectTip">Select Tip %</p>
           <div class="select-tip-container">
             <div class="tip-btn">
-              <input type="radio" name="tips" id="tip5">
+              <input type="radio" name="tips" id="tip5" class="tips" value="5">
             </div>
             <div class="tip-btn">
-              <input type="radio" name="tips" id="tip10">
+              <input type="radio" name="tips" id="tip10" class="tips" value="10">
             </div>
             <div class="tip-btn">
-              <input type="radio" name="tips" id="tip15">
+              <input type="radio" name="tips" id="tip15" class="tips" value="15">
             </div>
             <div class="tip-btn">
-              <input type="radio" name="tips" id="tip25">
+              <input type="radio" name="tips" id="tip25" class="tips" value="25">
             </div>
             <div class="tip-btn">
-              <input type="radio" name="tips" id="tip50">
+              <input type="radio" name="tips" id="tip50" class="tips" value="50">
             </div>
-              <input type="text" name="tipCustom" id="tipCustom" placeholder="Custom">
+              <input type="number" name="tipCustom" id="tipCustom" placeholder="Custom">
           </div>
         </div>
         
@@ -60,14 +60,14 @@
               <p class="title">Tip Amount</p>
               <p class="desc">/ person</p>
             </div>
-            <p class="result">$0.00</p>
+            <p class="tip result">$0.00</p>
           </div>
           <div class="display-total-result">
             <div class="text">
               <p class="title">Total</p>
               <p class="desc">/ person</p>
             </div>
-            <p class="result">$0.00</p>
+            <p class="total result">$0.00</p>
           </div>
         </div>
         <button class="reset-btn">Reset</button>
