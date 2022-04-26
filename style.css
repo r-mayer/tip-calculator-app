@@ -127,7 +127,7 @@ input[type="radio"]::before {
   }
 
 input[type="radio"]::after{
-    content: "5%";
+    content: attr(title);
     width: 4rem;
     height: 2rem;
     display: grid;
@@ -144,7 +144,19 @@ input[type="radio"]:checked::before {
     transform: scale(1);
 }
 
+.title-container {
+    display: flex;
+    justify-content: space-between;
+}
 
+.case-zero {
+    font-size: 1rem;
+    color: rgb(192, 79, 79);
+}
+
+.disabled {
+    display: none;
+}
 
 #numPeople {
     background: url(./images/icon-person.svg) no-repeat scroll 1rem 1rem;

@@ -6,6 +6,7 @@ const numPeople = document.getElementById('numPeople');
 const tips = document.querySelectorAll('.tips'); // select all the radio inputs
 const resetButton = document.querySelector('.reset-btn'); // select the reset button
 const inputCustom = document.getElementById("tipCustom"); // select the custom input
+const cantZeroMessage = document.querySelector('.case-zero'); // select the 'cant be zero' message
 
 // select the divs from the display
 const tipResultDiv = document.querySelector(".tip.result");
@@ -67,7 +68,9 @@ function callCalc() {
     console.log(numPeople.value);
     if ((numPeople.value == "") || (numPeople.value == "0")) {
         console.log("Dont call any function.");
+        cantZeroMessage.classList.remove('disabled');
     } else {
+        cantZeroMessage.classList.add('disabled');
         console.log("Calculating..");
         tipValue = getTipValue();
         // console.log(tipValue);
@@ -77,8 +80,8 @@ function callCalc() {
 
 // update the result on display
 function updateResult(tipPerPerson, totalPerPerson, reset) {
-    tipResultDiv.innerHTML = `${tipPerPerson}`;
-    totalResultDiv.innerHTML = `${totalPerPerson}`;
+    tipResultDiv.innerHTML = `$${tipPerPerson}`;
+    totalResultDiv.innerHTML = `$${totalPerPerson}`;
     if (reset == true) {
         resetCustom();
         totalBill.value = numPeople.value = "0";

@@ -30,26 +30,29 @@
           <p class="selectTip">Select Tip %</p>
           <div class="select-tip-container">
             <div class="tip-btn">
-              <input type="radio" name="tips" id="tip5" class="tips" value="5">
+              <input type="radio" name="tips" id="tip5" class="tips" value="5" title="5%">
             </div>
             <div class="tip-btn">
-              <input type="radio" name="tips" id="tip10" class="tips" value="10">
+              <input type="radio" name="tips" id="tip10" class="tips" value="10" title="10%">
             </div>
             <div class="tip-btn">
-              <input type="radio" name="tips" id="tip15" class="tips" value="15">
+              <input type="radio" name="tips" id="tip15" class="tips" value="15" title="15%">
             </div>
             <div class="tip-btn">
-              <input type="radio" name="tips" id="tip25" class="tips" value="25">
+              <input type="radio" name="tips" id="tip25" class="tips" value="25" title="25%">
             </div>
             <div class="tip-btn">
-              <input type="radio" name="tips" id="tip50" class="tips" value="50">
+              <input type="radio" name="tips" id="tip50" class="tips" value="50" title="50%">
             </div>
               <input type="number" name="tipCustom" id="tipCustom" placeholder="Custom">
           </div>
         </div>
         
         <div class="people">
-          <label for="numPeople" class="text-label">Number of people</label>
+          <div class="title-container">
+            <label for="numPeople" class="text-label">Number of people</label>
+            <p class="case-zero disabled">Can't be zero</p>
+          </div>
           <input type="number" name="numPeople" id="numPeople" placeholder="0">
         </div>        
       </div>
