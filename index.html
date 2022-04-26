@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <title>Tip calculator app</title>
+</head>
+<body>
+
+  <div class="splitter-logo">
+    <p class="title">spli</p>
+    <p class="title">tter</p>
+  </div>
+
+  <div class="app">
+    <div class="container">
+      <div class="left-side">
+        <label for="billValue" class="text-label">Bill</label>
+        <input type="number" name="billValue" id="billValue" placeholder="0">
+        <p class="selectTip">Select Tip %</p>
+        <div class="select-tip-container">
+          <div class="tip-btn">
+            <input type="radio" name="tips" id="tip5">
+          </div>
+          <div class="tip-btn">
+            <input type="radio" name="tips" id="tip10">
+          </div>
+          <div class="tip-btn">
+            <input type="radio" name="tips" id="tip15">
+          </div>
+          <div class="tip-btn">
+            <input type="radio" name="tips" id="tip25">
+          </div>
+          <div class="tip-btn">
+            <input type="radio" name="tips" id="tip50">
+          </div>
+            <input type="text" name="tipCustom" id="tipCustom" placeholder="Custom">
+        </div>
+        <label for="numPeople" class="text-label">Number of people</label>
+        <input type="number" name="numPeople" id="numPeople" placeholder="0">
+      </div>
+      <div class="right-side">
+        <div class="display-container">
+          <div class="display-tip-result">
+            <div class="text">
+              <p class="title">Tip Amount</p>
+              <p class="desc">/ person</p>
+            </div>
+            <p class="result">4.27</p>
+          </div>
+          <div class="display-total-result">
+            <div class="text">
+              <p class="title">Total</p>
+              <p class="desc">/ person</p>
+            </div>
+            <p class="result">32.79</p>
+          </div>
+          <button class="reset-btn">Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* reset and general config */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 24px;
+}
+
+/* end reset and general config */
+
+
+/* app general */
+
+
+.container {
+    width: 920px;
+    height: 480px;
+    border: 1px solid black;
+    padding: 2rem;
+    display: flex;
+}
+
+/* left-side */
+.left-side {
+    border: 1px solid black;
+    width: 50%;
+    padding: 0 2rem 0 0;
+}
+
+.text-label {
+    display: block;
+}
+
+#billValue {
+    width: 100%;
+}
+
+.selectTip {
+    font-size: 1rem;
+}
+
+.select-tip-container {
+    display: grid;
+    width: 100%;
+    border: 1px solid black ;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.tip-btn {
+    border: 1px solid red;
+    width: 7rem;
+    height: 3rem;
+    position: relative;
+}
+
+#tipCustom {
+    border: 1px solid red;
+    width: 7rem;
+    height: 3rem;
+}
+
+
+input[type="radio"] {
+    appearance: none;
+    width: 7rem;
+    height: 3rem;
+    display: grid;
+    place-content: center;
+    position: relative;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 7rem;
+    height: 3rem;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    background-color: red;
+    position: absolute;
+    left: -0px;
+    top: -0px;
+  }
+
+input[type="radio"]::after{
+    content: "5%";
+    width: 4rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    display: absolute;
+    left: -0px;
+    top: -0px;
+    z-index: 2;
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+
+
+/* end of left-side */
+
+
+
+
+/* right-side */
+.right-side {
+    border: 1px solid black;
+    width: 50%;
+    padding: 2rem;
+}
+
+/* end right-side */
+
+
+/* end of app general */
