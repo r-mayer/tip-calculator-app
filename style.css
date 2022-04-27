@@ -26,6 +26,19 @@ body {
     background-color: var(--light-grayish-cyan);
 }
 
+/* remove input arrows */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 /* end reset and general config */
 
 
@@ -38,7 +51,7 @@ body {
     padding: 2rem;
     display: flex;
     border-radius: 1rem;
-    background-color: var(--very-light-grayish-cyan);
+    background-color: var(--white);
 }
 
 /* left-side */
@@ -62,13 +75,14 @@ body {
     height: 3rem;
     border-radius: 0.3rem;
     border: none;
-    background-color: var(--very-light-grayish-cyan);
     text-align: end;
     font-size: 1.5rem;
+    color: var(--very-dark-cyan);
+    padding-right: 0.8rem;
 }
 
 #billValue {
-    background: url(./images/icon-dollar.svg) no-repeat scroll 1rem 1rem;
+    background: url(./images/icon-dollar.svg) no-repeat scroll 1rem 1rem var(--very-light-grayish-cyan);
 }
 
 .input-text:focus-visible {
@@ -98,10 +112,11 @@ body {
 #tipCustom {
     width: 100%;
     height: 3rem;
-    padding: 0.3rem;
+    padding-left: 1rem;
     font-size: 1.5rem;
     border: none;
     background-color: var(--very-light-grayish-cyan);
+    border-radius: 0.3rem;
 }
 
 
@@ -176,7 +191,7 @@ input[type="radio"]:checked::before {
 }
 
 #numPeople {
-    background: url(./images/icon-person.svg) no-repeat scroll 1rem 1rem;
+    background: url(./images/icon-person.svg) no-repeat scroll 1rem 1rem var(--very-light-grayish-cyan);
 }
 
 /* end of left-side */
