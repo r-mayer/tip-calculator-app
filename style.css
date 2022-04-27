@@ -57,7 +57,7 @@ body {
     margin-bottom: 0.5rem;
 }
 
-#billValue, #numPeople {
+.input-text {
     width: 100%;
     height: 3rem;
     border-radius: 0.3rem;
@@ -69,6 +69,10 @@ body {
 
 #billValue {
     background: url(./images/icon-dollar.svg) no-repeat scroll 1rem 1rem;
+}
+
+.input-text:focus-visible {
+    outline: 2px solid var(--main-cyan);
 }
 
 .selectTip {
@@ -111,6 +115,11 @@ input[type="radio"] {
     background-color: var(--very-dark-cyan);
     border-radius: 0.3rem;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="radio"]:hover {
+    background-color: var(--main-cyan);
 }
 
 input[type="radio"]::before {
@@ -119,7 +128,7 @@ input[type="radio"]::before {
     height: 3rem;
     transform: scale(0);
     transition: 120ms transform ease-in-out;
-    background-color: red;
+    background-color: var(--main-cyan);
     border-radius: 0.3rem;
     position: absolute;
     left: -0px;
@@ -140,6 +149,10 @@ input[type="radio"]::after{
     font-size: 1.3rem;
 }
 
+input[type="radio"]:hover::after {
+    color: var(--very-dark-cyan);
+}
+
 input[type="radio"]:checked::before {
     transform: scale(1);
 }
@@ -156,6 +169,10 @@ input[type="radio"]:checked::before {
 
 .disabled {
     display: none;
+}
+
+.red-outline:focus-visible {
+    outline: 2px solid rgb(212, 74, 74);
 }
 
 #numPeople {
@@ -216,6 +233,12 @@ input[type="radio"]:checked::before {
     font-size: 1.5rem;
     color: var(--very-dark-cyan);
     border-radius: 0.4rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reset-btn:hover {
+    background-color: var(--light-grayish-cyan);
 }
 
 /* end right-side */

@@ -24,7 +24,7 @@ inputCustom.addEventListener('keyup', () => {
 // cleans the custom field if a radio button is clicked
 tips.forEach(tip => tip.addEventListener('click', () => {
     resetCustom();
-    callCalc();
+    callCalc(true);
 }));
 
 // calls the callCalc function if a key is pressed on numPeople field
@@ -43,7 +43,7 @@ resetButton.addEventListener('click', () => {
 
 // reset the Custom field
 function resetCustom() {
-    inputCustom.value = "";
+    inputCustom.value = '';
 }
 
 // get the tip value (from radios or from custom field, both cases)
@@ -53,7 +53,6 @@ function getTipValue() {
             if (element.checked == true) {
                 console.log(element.value);
                 tipValue = Number(element.value);
-                console.log("theeeeeeeere" + tipValue);
             } 
         });
     } else {
@@ -63,14 +62,19 @@ function getTipValue() {
 }
 
 // calculates the results (only if the number of people is not zero)
-function callCalc() {
+function callCalc(isTip) {
     console.log(totalBill.value);
     console.log(numPeople.value);
     if ((numPeople.value == "") || (numPeople.value == "0")) {
         console.log("Dont call any function.");
         cantZeroMessage.classList.remove('disabled');
+        numPeople.classList.add('red-outline');
+        if (isTip) {
+            numPeople.focus();
+        }
     } else {
         cantZeroMessage.classList.add('disabled');
+        numPeople.classList.remove('red-outline');
         console.log("Calculating..");
         tipValue = getTipValue();
         // console.log(tipValue);
@@ -84,22 +88,16 @@ function updateResult(tipPerPerson, totalPerPerson, reset) {
     totalResultDiv.innerHTML = `$${totalPerPerson}`;
     if (reset == true) {
         resetCustom();
-        totalBill.value = numPeople.value = "0";
+        totalBill.value = numPeople.value = "";
     }
 }
 
 // calculate the final result and calls the update result function
 function makeCalcs(tipValue) {
-    
     totalBillValue = Number(totalBill.value);
     numPeopleValue = Number(numPeople.value);
-
-
     const tipTotal = totalBillValue*(tipValue/100);
-   
-    const tipPerPerson = (tipTotal/numPeopleValue).toFixed(2);
-    
-    const totalPerPerson = ((totalBillValue + tipTotal)/(numPeopleValue)).toFixed(2);
-    
+    const tipPerPerson = (tipTotal/numPeopleValue).toFixed(2);   
+    const totalPerPerson = ((totalBillValue + tipTotal)/(numPeopleValue)).toFixed(2);   
     updateResult(tipPerPerson, totalPerPerson, false);
 }
