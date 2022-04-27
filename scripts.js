@@ -69,12 +69,14 @@ function callCalc(isTip) {
         console.log("Dont call any function.");
         cantZeroMessage.classList.remove('disabled');
         numPeople.classList.add('red-outline');
+        resetButton.disabled = true;
         if (isTip) {
             numPeople.focus();
         }
     } else {
         cantZeroMessage.classList.add('disabled');
         numPeople.classList.remove('red-outline');
+        resetButton.disabled = false;
         console.log("Calculating..");
         tipValue = getTipValue();
         // console.log(tipValue);
@@ -89,6 +91,7 @@ function updateResult(tipPerPerson, totalPerPerson, reset) {
     if (reset == true) {
         resetCustom();
         totalBill.value = numPeople.value = "";
+        resetButton.disabled = true;
     }
 }
 
