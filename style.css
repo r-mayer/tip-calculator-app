@@ -290,3 +290,73 @@ input[type="radio"]:checked::before {
 
 
 /* end of app general */
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 930px) {
+
+    .splitter-logo {
+        margin: 3rem 0 2rem 0;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+        width: 90vw;
+        min-width: 375px;
+        padding: 1.5rem 2rem;
+        border-radius: 2rem;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+    }
+
+    .left-side {
+        padding: 0;
+    }
+
+    .bill {
+        margin-bottom: 2rem;
+    }
+
+    .select-tip-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #tipCustom {
+        text-align: end;
+        padding-right: 1rem;
+    }
+
+    .tip {
+        padding-bottom: 2.5rem;
+    }
+
+    .people {
+        margin-bottom: 2.4rem;
+    }
+
+    .right-side {
+        padding: 2.25rem 1.25rem 1.4rem 1.25rem;
+    }
+
+    .result {
+        font-size: 2rem;
+    }
+
+    .display-tip-result {
+        margin-bottom: 1.25rem;
+    }
+
+    .display-total-result {
+        margin-bottom: 1.5rem;
+    }
+
+    .input-text {
+        padding-right: 1.25rem;
+    }
+
+}

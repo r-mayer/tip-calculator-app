@@ -9,8 +9,8 @@ const inputCustom = document.getElementById("tipCustom"); // select the custom i
 const cantZeroMessage = document.querySelector('.case-zero'); // select the 'cant be zero' message
 
 // select the divs from the display
-const tipResultDiv = document.querySelector(".tip.result");
-const totalResultDiv = document.querySelector(".total.result");
+const tipResultDiv = document.querySelector(".right-tip.result");
+const totalResultDiv = document.querySelector(".right-total.result");
 
 
 // EVENT LISTENERS
