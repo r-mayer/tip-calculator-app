@@ -4,7 +4,7 @@ Probably the most challenging project so far (in this beginning of road), becaus
 
 - Javascript: I used a lot of DOM manipulation, understanding his various methods; I broke apart the JS solution into some separate functions e called them in the right order; Deal with the function parameters; prevented negative inputs, zero inputs, NaN results...; etc.
 
-- CSS: used a lot of flexbox, as always, which is becoming usual, but in this case I had to deal with grid too, and I think I did it well; I had to style inputs (text and radio), which was fun; Responsiveness was fun too.
+- CSS: used a lot of flexbox, as always, which is becoming usual, but in this case I had to deal with grid too, and I think I did it well; I had to style inputs (text and radio - borders, pseudo elements, disabled states, etc), which was fun; Responsiveness was fun too.
 
 - HTML: dealing with the propertys of HTML inputs was new for me, and I think it was very important to learn this. 
 
