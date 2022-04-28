@@ -24,7 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     background-color: var(--light-grayish-cyan);
     overflow-x: hidden;
 }
@@ -48,10 +48,10 @@ input[type=number] {
     letter-spacing: 0.5rem;
 }
 
-.splitter-logo {
+/* .splitter-logo {
     margin-bottom: 5rem;
     margin-top: 2rem; 
-}
+} */
 
 /* end reset and general config */
 
