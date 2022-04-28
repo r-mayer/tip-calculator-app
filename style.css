@@ -48,10 +48,9 @@ input[type=number] {
     letter-spacing: 0.5rem;
 }
 
-/* i disabled that for a while */
 .splitter-logo {
-    /* margin-bottom: 5rem;
-    margin-top: 2rem; */ 
+    margin-bottom: 5rem;
+    margin-top: 2rem; 
 }
 
 /* end reset and general config */
