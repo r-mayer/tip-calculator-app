@@ -48,9 +48,10 @@ input[type=number] {
     letter-spacing: 0.5rem;
 }
 
+/* i disabled that for a while */
 .splitter-logo {
     /* margin-bottom: 5rem;
-    margin-top: 2rem; */
+    margin-top: 2rem; */ 
 }
 
 /* end reset and general config */
@@ -66,6 +67,7 @@ input[type=number] {
     display: flex;
     border-radius: 0.7rem;
     background-color: var(--white);
+    box-shadow: 0px 0px 6px 1px rgba(127, 156, 159, 0.1);
 }
 
 /* left-side */
@@ -223,7 +225,6 @@ input[type="radio"]:checked::before {
 
 
 
-
 /* right-side */
 .right-side {
     width: 50%;
@@ -235,9 +236,6 @@ input[type="radio"]:checked::before {
     border-radius: 1rem;
 }
 
-.display-container {
-    /* border: 1px solid red; */
-}
 
 .display-tip-result, .display-total-result {
     display: flex;
